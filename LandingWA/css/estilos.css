@@ -1,0 +1,120 @@
+.logo{
+    font-family: 'Baloo', cursive;
+}
+
+body{
+    font-family: 'Baloo', cursive;
+    color: #39323A;
+    
+}
+
+h1{
+    font-family: 'Baloo', sans-serif;
+    color: #72AE94;
+}
+h2,h3{
+    font-family: 'Baloo', sans-serif;
+    color: #ffffff;
+}
+.colortitulos{
+    color: #72AE94;
+}
+
+.colorhead{
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#72ae94+0,acd9c5+86,acd9c5+100 */
+background: rgb(114,174,148); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(114,174,148,1) 0%, rgba(172,217,197,1) 86%, rgba(172,217,197,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(114,174,148,1) 0%,rgba(172,217,197,1) 86%,rgba(172,217,197,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(114,174,148,1) 0%,rgba(172,217,197,1) 86%,rgba(172,217,197,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72ae94', endColorstr='#acd9c5',GradientType=1 ); /* IE6-9 */
+
+
+}
+
+.imagen2{
+    width: 350px;
+    margin-left: 25%!important;
+    
+
+}
+.imagen3{
+    width: 250px;
+
+    margin-left: 150px;
+    margin-bottom: 25px;
+
+}
+.imagen3_{
+    width: 80%;
+    border-radius: 50px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+
+}
+.headertamano{
+    height: 260px;
+}
+.tamano{
+    width: 800px;
+}
+.venydes{
+
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#acd9c5+0,72ae94+91,72ae94+99 */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#72ae94+0,acd9c5+86,acd9c5+100 */
+background: rgb(114,174,148); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(114,174,148,1) 0%, rgba(172,217,197,1) 86%, rgba(172,217,197,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(114,174,148,1) 0%,rgba(172,217,197,1) 86%,rgba(172,217,197,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(114,174,148,1) 0%,rgba(172,217,197,1) 86%,rgba(172,217,197,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72ae94', endColorstr='#acd9c5',GradientType=1 ); /* IE6-9 */
+
+}
+.ventajas{
+    background-color: rgba(149, 204, 236, 0.616);
+
+}
+.desventajas{
+    background-color: rgba(233, 156, 226, 0.616);
+}
+.margen{
+    margin-bottom: 0;
+}
+
+.sangria{
+    text-indent: 20px;
+}
+.justificado{
+    text-align: center;
+}
+.tablas{
+    height: 250px;
+}
+
+.fotosCartas{
+    width: 40%!important;
+    border-radius: 50px;
+}
+.botonPagina{
+    padding: 10px 30px;
+    background-color: #72AE94;
+    color: #ffffff;
+    text-decoration: none;
+    border: #72AE94;
+    border-radius: 10px;
+}
+.botonPagina:hover{
+    
+    background-color: rgb(86, 143, 118);
+   
+}
+.botonPagina a{
+    
+    color: #ffffff;
+    text-decoration: none;
+}
+.botonPagina a:hover{
+    
+    color: #ffffff;
+    text-decoration: none;
+}
