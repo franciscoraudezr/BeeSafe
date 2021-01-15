@@ -1,0 +1,67 @@
+/** ==================================
+    Globales
+    =================================**/
+
+.iconoTipoUsuario {
+  color: #2f2319;
+  width: 80%;
+  font-size: 80px;
+  margin: 0px 50px;
+  text-shadow: 2px 5px 7px #2f2319;
+}
+.iconoTipoUsuario i:hover {
+  color: #cc5d01;
+}
+.active {
+  color: #cc5d01;
+}
+
+/** ==================================
+          Main - Formulario - Registro
+          =================================**/
+
+.logoFormu {
+  width: 30%;
+  margin-bottom: -50px;
+  margin-top: 25px;
+}
+.acomodo {
+  width: 85.5%;
+  margin-right: -1075px;
+}
+
+.formulario {
+  text-align: center;
+
+  background: url(../../../assets/img/fondoabeja.png);
+  background-size: cover;
+
+  height: 100vh;
+}
+
+/*.fondosGB{
+        margin-top: -250px !important;
+      }*/
+
+/** ==================================
+          Inicio de Sesion - Formulario
+          =================================**/
+.largoFondos {
+  width: 35%;
+}
+
+.estiloBoton {
+  font-family: "Baloo", cursive;
+  text-align: justify;
+  border: #2f2319 3px solid;
+  background-color: transparent;
+  color: #2f2319;
+  padding: 15px 15px;
+  width: 13%;
+  border-radius: 5px;
+}
+.estiloBoton:hover {
+  border: #cc5d01 3px solid;
+}
+
+    

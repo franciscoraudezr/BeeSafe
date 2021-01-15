@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="formulario">
+
+        <form>
+
+            <br>
+           <a href="../../../index.html" ><img  class="logoFormu" src="../../../assets/img/BEESAFE.png" alt=""></a>  <br> 
+            
+        <a class="iconoTipoUsuario active" title="Usuario Clasico" href="../registroUsuarioClasico/index.html"> <i class="fas fa-user"></i></i></a>
+        <a class="iconoTipoUsuario" title="Usuario Especializado"  href="../registroUsuarioEspecializado/index.html"> <i class="fas fa-user-tie"></i> </a>
+
+            <h1 class="alt_letra">Registro De Usuario</h1> <br>
+
+
+            <input class="fondosG" type="text" value="" placeholder="Nombre" name="nombre" id="nombre">
+            <input class="fondosG" type="text" value="" placeholder="Apellido" name="apellido" id="apellido"> <br> <br>
+            <input class="fondosG" type="number" value="" placeholder="Edad" name="edad" id="edad">
+            <input class="fondosG" type="email" value="" placeholder="Correo electrónico" name="correo" id="correo">
+            <br>
+            <br>
+
+
+
+            <select class="fondosG" id="tipoCedula">
+                <option value="" selected hidden>Tipo de cédula:</option>
+                <option value="fisica">Fisica</option>
+                <option value="juridica">Jurídica </option>
+
+            </select>
+
+            <input class="fondosG" type="number" value="" placeholder="Cédula" name="cedula" id="cedula">
+            <br> <br> <br> <br>
+            
+            <button class="boton_1 fondosG alt_letra" type="button" onclick="enviar()"> Enviar</button>
+
+
+        </form>
+
+    </section>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

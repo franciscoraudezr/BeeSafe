@@ -1,0 +1,77 @@
+
+    /** ==================================
+        Main - Formulario - Registro
+        =================================**/
+
+        .formulario {
+          text-align: center;
+         
+          height: 85vh;
+        }
+    
+        .izquierdaCentro{
+          margin-left: 350px;
+          margin-right: -300px;
+        }
+        
+    
+        .imagen_provisional{
+          font-size: 150px;
+          margin-left: 50px;
+        }
+        
+      
+        
+        .upload-btn-wrapper {
+          position: relative;
+          overflow: hidden;
+          display: inline-block; 
+        }
+       
+      
+        
+        .upload-btn-wrapper input[type=file] {
+          font-size: 11px;
+          height: 100px;
+          position: absolute;
+          left: 15px;
+          top: 0px;
+          opacity: 0;
+    
+        }
+    
+        .boton-imagen {
+          font-family: "Baloo", cursive;
+          text-align: justify;
+          border: #2f2319 3px solid;
+          background-color:inherit;
+          color: #2f2319;
+          padding: 15px 15px;
+        }
+        .boton-imagen:hover {
+          border: #ef9d34 5px solid;
+          
+        }
+    
+        .estiloBoton {
+          font-family: "Baloo", cursive;
+          text-align: justify;
+          border: #2f2319 3px solid;
+          background-color: transparent;
+          color: #2f2319;
+          padding: 15px 15px;
+          width: 250px;
+          border-radius: 5px;
+        }
+        .estiloBoton:hover {
+          border: #cc5d01 3px solid;
+        }
+    
+        .imagenAgregada{
+          width: 16%;
+          margin-bottom: -50px;
+        }
+        
+     
+        
+          

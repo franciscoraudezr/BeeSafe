@@ -1,0 +1,77 @@
+/** ==================================
+    se llamaron estilos globlaes de otra
+    carpeta, ingrese los suyos aca,
+    para sobreescribir algo si no se cambia
+    puede agregarle a la derecha
+    !important 
+    y listo
+    =================================**/
+    
+    main .contenidoPrincipal{
+      max-height: 85vh;
+      overflow: auto;
+    }
+    
+    .contenidoPrincipal {
+      margin-left: 22%;
+      
+    }
+    
+    .modificarBoton{
+      width: 20.5%;
+      margin-left: 11.5%;
+    }
+    
+    .imagen{
+      width: 35px;
+    }
+
+  
+    .estiloBoton:hover {
+      border: #cc5d01 3px solid;
+    }
+    .imagen_provisional{
+      font-size: 150px;
+      margin-left: 50px;
+    }
+    
+  
+ 
+    
+
+
+    .boton-imagen {
+      font-family: "Baloo", cursive;
+      text-align: justify;
+      border: #2f2319 3px solid;
+      background-color:inherit;
+      color: #2f2319;
+      padding: 15px 15px;
+    }
+    .boton-imagen:hover {
+      border: #ef9d34 5px solid;
+      
+    }
+
+    .estiloBoton {
+      font-family: "Baloo", cursive;
+      text-align: justify;
+      border: #ef9d34 3px solid;
+      background-color: transparent;
+      color: #2f2319;
+      padding: 15px 15px;
+      width: 250px;
+      margin-right: 13px;
+      border-radius: 5px;
+      
+    }
+    .estiloBoton:hover {
+      border: #cc5d01 3px solid;
+    }
+
+    .imagenAgregada{
+      width: 30%!important;
+      margin-bottom: -50px;
+    }
+    
+ 

@@ -1,0 +1,145 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BeeSafe</title>
+    
+        <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    
+        <link rel="stylesheet" href="estilos.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+        <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+    
+        <header>
+    
+            <nav>
+                
+                    
+                <img  class="logo_header"
+                    src="../../../assets/img/blancobesafe.png" alt=""> 
+    
+                    
+                <a class="alt_letra derecha" href="../../sesiones_perfiles/perfilUsuarioAdmin/index.html">PERFIL <i class="far fa-user-circle"></i></a>
+
+                <a class="alt_letra titulo_cuenta " href="../../sesiones_perfiles/sesionUsuarioAdmin/index.html">—ADMINISTRADOR</a>
+    
+            </nav>
+    
+        </header>
+    
+        <main>
+    
+            <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+    
+        <div class=" contenido_izquierdo izquierda">
+
+            <br>
+    
+            <ul style="list-style-type:none;" class="alt_letra listas_menu">
+    
+                <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+                <li> <a href="../../listar/listarUsuarios/index.html">Usuarios</a></li>
+                <br>
+                <li> <a href="../../listar/ListarRutasAdmin/index.html">Rutas Disponibles</a> </li>
+                <br>
+                <li> <a href="../../listar/ListarAsistencias/index.html">Tipos de asistencia</a> </li>
+                <br>
+                <li> <a href="../../listar/listarTipoVehiculoEspecializado/index.html">Tipos de Vehículos</a></li>
+                <br>
+                <li><a href="../../listar/listarCaracteristicasvehiculo/index.html"> Características Vehículos</a> </li>
+                <br>
+                <li> <a href="../../listar/listarCategoriaIncidente/index.html"> Categorías Incidentes</a></li>
+            </ul>
+    
+    
+    
+    
+    
+    
+        </div>
+    
+    
+            <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+    
+            <!-- =======================================
+                                Contenido Central Inicio
+        =================================================-->
+    
+    
+            <div class="contenidoPrincipal">
+
+                
+    <section class="formulario">
+
+        <form>
+
+            <br>
+          <br> <br>
+            
+
+            <h1 class="alt_letra">Registro De Usuario Rutas</h1> <br> <br>
+
+
+            <input class="fondosG" type="text" value="" placeholder="Nombre" name="nombre" id="nombre">
+            <input class="fondosG" type="text" value="" placeholder="Apellido" name="apellido" id="apellido"> <br> <br>
+            <input class="fondosG" type="number" value="" placeholder="Edad" name="edad" id="edad">
+            <input class="fondosG" type="email" value="" placeholder="Correo electrónico" name="correo" id="correo">
+            <br>
+            <br>
+
+
+
+            <select class="fondosG" id="tipoCedula">
+                <option value="" selected hidden>Tipo de cédula:</option>
+                <option value="fisica">Fisica</option>
+                <option value="juridica">Jurídica </option>
+
+            </select>
+
+            <input class="fondosG" type="number" value="" placeholder="Cédula" name="cedula" id="cedula">
+            <br> <br>
+            
+            <button class="boton_1 alt_letra fondosG " type="button" onclick="enviar()"> Registrar</button>
+
+
+        </form>
+
+    </section>
+    
+            </div>
+    
+    
+            <!-- =======================================
+                                Contenido Central Final
+        =================================================-->
+    
+        </main>
+    
+    
+    
+        <footer>
+    
+            <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+    
+        </footer>
+    
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+    
+    </html>

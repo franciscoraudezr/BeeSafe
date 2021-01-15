@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+    <script>
+        var galleta = localStorage.getItem("usuario");
+        if (galleta != 1)
+          window.location.replace("../../../index.html");
+      </script>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img onclick="window.location.href='../../../index.html'" class="logo_header" src="../../../assets/img/blancobesafe.png" alt="">
+            <a class="alt_letra derecha" href="../perfilUsuarioClasico/index.html">PERFIL <i class="far fa-user-circle"></i></a>
+        
+            <a class="alt_letra titulo_cuenta " href="#">—USUARIO TRADICIONAL</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+
+  <div class=" contenido_izquierdo izquierda">
+
+    <br>
+
+    <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+        <h3 class="titulo_lateral alt_letra">Opciones</h3> <br> 
+        <li><a href="../sesionUsuarioClasico/index.html">Mapa</a> </li>
+        <br>
+        <button class="botonReporte alt_letra" id="myBtn">Reporte</button>
+
+        <br><br>
+        <li><a href="../../registros/registroAsistencia/index.html">Asistencia</a> </li>
+        
+        <br>
+        <li><a href="../../listar/listarVehiculos/index.html">Vehículos</a> </li>
+
+        <br>
+        <li><a href="../../listar/listarMetodoPago/index.html">Tarjetas de pago</a> </li>
+        <br>
+
+        <br>
+
+
+    </ul>
+
+</div>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+        <!-- =======================================
+                            Contenido Central Inicio
+    =================================================-->
+
+
+        <!-- =======================================
+                            MAPA
+    =================================================-->
+
+    
+        <div class="" id='map' style=' height: 85vh'>
+          <script>
+                 mapboxgl.accessToken = 'pk.eyJ1Ijoic295cG9sb3lvIiwiYSI6ImNrODRtY3pyNTB5OWkzbG56ZWp2b3Y4cWEifQ.kXhxq_6KXwzzTMKX9MR66w';
+              
+              var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v11',
+                  zoom: 14.5
+                  
+
+              });
+
+             var latitude;
+                          var longitude;
+                    if(navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(function(position) {
+                      var positionInfo = "Latitud: " + position.coords.latitude + ", " + "Longitud: " + position.coords.longitude;
+                      console.log(positionInfo);
+                  
+                      latitude=position.coords.latitude;
+                      longitude=position.coords.longitude;
+                      console.log(latitude +   " " + longitude);
+                        map.setCenter({lon: position.coords.longitude, lat: position.coords.latitude})//cambio
+                      },function (){},{timeout:5000});
+                    }else{
+                      console.log("error de Long lat");
+  
+                    }
+               
+                //Inicio localizacion actual
+                
+        
+    console.log(latitude);
+    console.log(latitude);
+  //Fin localizacion actual
+                
+           </script>
+        </div>
+      
+
+        <!-- =======================================
+                            Contenido Central Final
+    =================================================-->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Reporte de Siniestro</h1>
+    <br><br>
+   
+    <select id="ruta" class="selectModalRuta">
+      <option value="Choque">Ruta1</option>          
+    </select>
+    <br><br>
+      
+        
+</select>
+<div class="wrapperAsistencia">
+  <br>
+  <div class="containerAsistencia">
+    <label for="Asist" class="labelAsistencia">¿Asistencia? </label>
+  <input type="checkbox" id="asistencia" name="Ayuda" >
+</div>
+  <select id="tipoSiniestro" class="selectModal">
+    <option value="Choque">Choque</option>
+    <option value="Derrumbe">Derrumbe</option>
+  </select>
+  
+
+</div>
+    <textarea  placeholder="Describa el siniestro" rows="4" cols="70" class="textAreaModal" id="descripcion"></textarea>
+<br><br>
+  <input type="submit" onclick="registro()" class="confirmarReporte">
+  
+  </div>
+
+</div>
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+
+  
+
+    <script src="index.js"></script>
+    <script src="indexRegistro.js"></script>
+</body>
+
+</html>

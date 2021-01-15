@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+
+            <img class="logo_header" src="../../../assets/img/blancobesafe.png" alt="">
+
+
+            <a class="alt_letra derecha" href="../../sesiones_perfiles/perfilUsuarioAdmin/index.html">PERFIL <i
+                class="far fa-user-circle"></i></a>
+    
+            <a class="alt_letra titulo_cuenta "
+                href="../../sesiones_perfiles/sesionUsuarioAdmin/index.html">—ADMINISTRADOR</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+    <div class=" contenido_izquierdo izquierda">
+
+        <br>
+
+        <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+            <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+            <li> <a href="../../listar/listarUsuarios/index.html">Usuarios</a></li>
+            <br>
+            <li> <a href="../../listar/ListarRutasAdmin/index.html">Rutas Disponibles</a> </li>
+            <br>
+            <li> <a href="../../listar/ListarAsistencias/index.html">Tipos de asistencia</a> </li>
+            <br>
+            <li> <a href="../../listar/listarTipoVehiculoEspecializado/index.html">Tipos de Vehículos</a></li>
+            <br>
+            <li><a href="../../listar/listarCaracteristicasvehiculo/index.html"> Características Vehículos</a> </li>
+            <br>
+            <li> <a href="../../listar/listarCategoriaIncidente/index.html"> Categorías Incidentes</a></li>
+        </ul>
+
+
+
+
+
+
+    </div>
+
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+        <!-- =======================================
+                            Contenido Central Inicio
+    =================================================-->
+
+
+        <div class="contenidoPrincipal">
+
+
+
+            <section class="formulario">
+                <br>
+                <br>
+
+
+
+                <form class="formulario2">
+                    <h1 class="alt_letra">Registrar categoría de incidente</h1> <br>
+                    <br>
+                    <div class=" ">
+
+                        <input class="fondosG" type="text" value="" placeholder="Nombre del incidente" name="nombre"
+                            id="nombre" autofocus>
+
+                        <br><br>
+
+                        <textarea class="fondosG" rows="7" placeholder="Descripción" id="descripcion"></textarea>
+                    </div>
+
+                    <!-- =======================================
+                            Contenido Div de imagen Fran
+                            
+                            <div class="upload-btn-wrapper ">
+                        <input class="boton-imagen fondosG" type="button" value="Imagen">
+                        <input type="file" name="myfile" id="image" accept="image/gif, image/png, image/jpeg"
+                            onchange="subirImagen()">
+                            
+                            <p class="imagen_provisional ">
+                        <i class=" esconder far fa-image" id="muestraIcono"></i>
+                        <img class="" id="imagenAgregada" alt="">
+                    </p>
+                    
+                    </div>  <img src="/public/assets/uploads/car-crash-solid.png">
+    =================================================-->
+
+                    <input onchange="subirImagen()" class="estiloBoton" type="file" name="image" id="image"> <br> <br>
+
+                    <img class="" id="imagenAgregada" alt=""> <br>
+                    <i class="  far fa-image muestraIcono" id="muestraIcono"></i> <br> <br>
+
+
+
+                    <br> 
+                    <input class="boton_1 alt_letra fondosG" type="button" value="Registrar" onclick="registro()">
+
+                    <br><br>
+
+                </form>
+            </section>
+
+        </div>
+
+
+        <!-- =======================================
+                            Contenido Central Final
+    =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

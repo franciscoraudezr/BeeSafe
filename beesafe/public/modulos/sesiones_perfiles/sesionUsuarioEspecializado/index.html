@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <script>
+        var galleta = localStorage.getItem("usuario");
+        if (galleta != 2)
+            window.location.replace("../../../index.html");
+    </script>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img onclick="window.location.href='../../../index.html'" class="logo_header"
+                src="../../../assets/img/blancobesafe.png" alt="">
+            <a class="alt_letra derecha" href="../perfilUsuarioEspecializado/index.html">PERFIL <i
+                    class="far fa-user-circle"></i></a>
+           
+            <a class="alt_letra titulo_cuenta " href="index.html">—USUARIO ESPECIALIZADO</a>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+        <div class=" contenido_izquierdo izquierda">
+
+            <br>
+
+            <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+                <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+
+                <li><a href="../../listar/listarSolicitudesAsistencia/index.html"> Solicitudes asistencia</a> </li>
+                <br>
+                <li><a href="../../listar/listarReporteAsistenciaEspecializado/index.html">Solicitudes Aceptadas</a> </li>
+                <br>
+                <li><a href="../../listar/listarVehiculosUEsp/index.html"> Vehiculos</a> </li>
+                <br>
+
+
+
+
+            </ul>
+
+        </div>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+        <!-- =======================================
+                            Contenido Central Inicio
+    =================================================-->
+
+
+    <div class="" id='map' style='height: 85vh;' ;></div>
+
+
+        <!-- =======================================
+                            Contenido Central Final
+    =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+
+  <!--   <script src="index.js"></script> -->
+
+
+
+    <script>
+
+        var cont = 0;
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWJsYW5jb2NlbmZvIiwiYSI6ImNrODNud2lrdzB6NDQzZnBxZzh1cmZ6ZnEifQ.zM2OTXbSt4-hq2FzCB7WkQ';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            zoom: 14.5,
+        });
+
+        //script para conocer la ubicación actual
+
+        var longitud;
+        var latitud;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var longitud = position.coords.longitude;
+                var latitud = position.coords.latitude
+                /* guardarCoordenadas(longitud, latitud); */
+
+                map.setCenter({ lon: position.coords.longitude, lat: position.coords.latitude })//cambio
+
+            }, function () { }, { timeout: 5000 });
+
+        } else {
+            console.log('Error de longitud y latitud');
+        }
+
+        /* function guardarCoordenadas(plongitud, platitud) {
+            console.log(plongitud);
+            console.log(platitud);
+            localStorage.setItem('longitud', plongitud);
+            localStorage.setItem('latitud', platitud);
+        } */
+
+        async function getRutas() {
+            var response = await fetch('/listarRutas/recibir');
+            var data = await response.json();
+            return data;
+        }
+
+        listaRutas();
+
+        async function listaRutas() {
+
+            var rutas = await getRutas();
+
+            for (var i = 0; i < rutas.length; i++) {
+
+                var radius = [25, 25];
+                var profile = "driving";
+
+                var coords = await obtenerRuta(rutas[i].coordenada, radius, profile);
+
+                map.addLayer({
+                    "id": rutas[i]._id,
+                    "type": "line",
+                    "source": {
+                        "type": "geojson",
+                        "data": {
+                            "type": "Feature",
+                            "geometry": coords
+                        }
+                    },
+                    "layout": {
+                        "line-join": "round",
+                        "line-cap": "round"
+                    },
+                    "paint": {
+                        "line-color": "#03AA46",
+                        "line-width": 4,
+                        "line-opacity": 0.8
+                    }
+                });
+            }//fin del for
+
+        };//fin de listaRutas
+
+        async function obtenerRuta(coordenada, radius, profile) {
+            var radiuses = radius.join(';')
+            var query = 'https://api.mapbox.com/matching/v5/mapbox/' + profile + '/' + coordenada + '?geometries=geojson&radiuses=' + radiuses + '&steps=true&access_token=' + mapboxgl.accessToken;
+            var response = await fetch(query);
+            var coord = await response.json();
+            var coords = coord.matchings[0].geometry;
+            console.log(coords.coordinates);
+            return coords;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        renderSiniestros();
+
+        async function renderSiniestros() {
+
+            let incidente = await getIncidentes();
+            console.log(incidente);
+
+            for (let i = 0; i < incidente.length; i++) {
+
+                var infoIncidente = {
+                    type: 'FeatureCollection',
+                    features: [
+                        {
+                            type: 'Feature',
+                            geometry: {
+                                type: 'Point',
+                                coordinates: [incidente[i].longitud, incidente[i].latitud]
+                            },
+                            properties: {
+                                title: incidente[i].categoriaIncidente,
+                                description: incidente[i].descripcionIncidente
+                            }
+                        }]
+                };
+
+                // add markers to map
+                infoIncidente.features.forEach(function (marker) {
+                    // create a HTML element for each feature
+                    var el = document.createElement('div');
+                    var image = document.createElement("img");
+                    image.setAttribute("src", incidente[i].iconoIncidente);
+                    image.classList.add("icon");
+                    el.appendChild(image);
+
+                    // make a marker for each feature and add to the map
+                    new mapboxgl.Marker(el)
+                        .setLngLat(marker.geometry.coordinates)
+                        .setPopup(new mapboxgl.Popup({ offset: 25 })
+                            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                        .addTo(map);
+                });
+            }
+        };
+
+        async function getIncidentes() {
+            var response = await fetch('/listarSiniestroAsistencia/recibir');
+            var data = await response.json();
+            return data;
+        }//fin de getSiniestroAsistencia
+
+    </script>
+
+
+</body>
+
+</html>

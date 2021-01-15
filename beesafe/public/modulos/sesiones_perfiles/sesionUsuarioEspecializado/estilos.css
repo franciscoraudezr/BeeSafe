@@ -1,0 +1,33 @@
+/** ==================================
+    se llamaron estilos globlaes de otra
+    carpeta, ingrese los suyos aca,
+    para sobreescribir algo si no se cambia
+    puede agregarle a la derecha
+    !important 
+    y listo
+    =================================**/
+    main .contenidoPrincipal{
+        max-height: 85vh;
+        overflow: auto;
+      }
+      
+      .contenidoPrincipal {
+        margin-left: 22%;
+        
+      }
+      
+      .modificarBoton{
+        width: 20.5%;
+      }
+      
+      .imagen{
+        width: 35px;
+      }
+      .icon {
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    
+    

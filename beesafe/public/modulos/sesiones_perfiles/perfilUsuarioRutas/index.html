@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img class="logo_header" src="../../../assets/img/blancobesafe.png" alt="">
+            <a class="alt_letra derecha" href="../../../index.html" onclick="localStorage.clear()">CERRAR SESIÓN</a>
+            <a class="alt_letra derecha " href="../../sesiones_perfiles/sesionUsuarioRutas/index.html">INICIO <i
+                class="far fa-user-circle"></i>
+                    </a>
+            <a class="alt_letra titulo_cuenta " href="../../sesiones_perfiles/sesionUsuarioRutas/index.html">—USUARIO
+                RUTAS</a>
+
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+        <div class=" contenido_izquierdo izquierda">
+
+            <br>
+
+            <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+                <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+                <li><a href="index.html">Cuenta</a> </li>
+                <br>
+                <br>
+
+
+
+            </ul>
+
+            <br> <br>
+
+            <br> <br>
+
+
+
+        </div>
+
+        <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+
+        <!-- =======================================
+                                Contenido Central Inicio
+        =================================================-->
+
+
+        <div class="contenidoPrincipal">
+
+            <section class="listadoUsuarios">
+
+                <br><br>
+                <button class="boton_2 alt_letra fondosG modificarBoton derecha " type="button">
+                    <a class="redireccion" onclick="obtenerId()" href="../../modificar/modificarUsuarioRutas/index.html">Editar cuenta</a>
+                </button>
+
+                <br>
+
+                <h1 class="izquierda alt_letra">Datos de su cuenta</h1>
+
+                <br><br>
+
+                <div id="contenidoUsuario">
+                    <br>
+                    <input onchange="subirImagen()" class="estiloBoton derecha" type="file" name="image" id="image"> 
+
+                </div>
+
+                <br>
+            
+
+            </section>
+
+        </div>
+
+
+        <!-- =======================================
+                                Contenido Central Final
+        =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

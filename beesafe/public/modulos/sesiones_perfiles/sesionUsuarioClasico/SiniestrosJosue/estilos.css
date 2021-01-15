@@ -1,0 +1,178 @@
+
+    /** ==================================
+              CONTENIDO PRINCIPAL
+      =================================**/
+    
+    .contenido_izquierdo {
+   overflow: scroll;
+    }
+    
+    .titulo_reporte {
+      color:#2f2319;
+    
+      width: 90%;
+      font-size: 20px;
+      margin: 0 auto;
+      text-shadow: 3px 3px 7px #a8998c;
+    }
+    
+
+    .imagen_provisional{
+      font-size: 100px;
+      margin-bottom: -20px;
+    }
+    
+    .subir_img{
+      width: 80%;
+    }
+    .envio_formulario{
+      color: white;
+      background-color: #ef9d34;
+      width: 90%;
+      font-size: 20px;
+      margin: 0 auto;
+      border: #2f2319 solid 2px;
+      box-shadow: 1px 1px 10px #2f2319;
+      border-radius: 5px;
+    }
+    .envio_formulario:hover {
+      box-shadow: 1px 1px 10px #cc5d01;
+      background-color: #2f2319;
+      border: #2f2f2f 2px solid;
+    }
+    
+    /** ==================================
+              FOOTER
+    =================================**/
+ 
+    
+    .imagen_subida{
+      width: 30%;
+      margin-top: 10px;
+    }
+
+
+    /** estilosPuntos**/
+    .marker {
+      background-image: url('../../../assets/img/mapbox-icon.png');
+          
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      border-radius: 40%;
+      cursor: pointer;
+          }
+      
+      .mapboxgl-popup {
+max-width: 200px;
+}
+      
+.mapboxgl-popup-content {
+text-align: center;
+font-family: 'Baloo 2, cursive';
+}
+      
+    
+
+/**Modal**/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  text-align: center;
+  position: relative;
+}
+
+.textAreaModal{
+  margin-left: 9%;
+}
+.selectModal{
+  overflow: auto  ;
+
+}
+.selectModalRuta{
+  overflow: auto;
+  position: absolute;
+
+}
+.wrapperAsistencia{
+  overflow: auto;
+position: absolute;
+margin-left: 16%;
+margin-top: 1%;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botonReporte {
+
+  color: white;
+  background-color: #2f2319;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 auto;
+  border: #2f2319;
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "Baloo", cursive;
+
+}
+.botonReporte:hover {
+  box-shadow: 1px 1px 7px #2f2319;
+  background-color: #cc5d01;
+}
+.confirmarReporte{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(25, 187, 25);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 7%;
+    font-family: "Baloo 2", cursive;
+}
+.confirmarReporte:hover{
+  font-family: "Baloo 2", cursive;
+  background-color: rgb(17, 131, 17);
+}
+.containerAsistencia{
+margin-top: 0%;
+}
