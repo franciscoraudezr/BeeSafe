@@ -1,0 +1,9 @@
+main .contenidoPrincipal{
+  max-height: 85vh;
+  overflow: auto;
+}
+
+.contenidoPrincipal {
+  margin-left: 22%;
+  
+}

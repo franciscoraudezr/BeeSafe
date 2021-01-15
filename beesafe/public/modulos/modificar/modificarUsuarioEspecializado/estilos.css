@@ -1,0 +1,16 @@
+.listadoUsuarios{
+    height: 85vh;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.modificarBoton{
+    
+}
+
+.modificar{
+    margin-left: 15%;
+    text-align: center;
+    width: 30%!important;
+
+}

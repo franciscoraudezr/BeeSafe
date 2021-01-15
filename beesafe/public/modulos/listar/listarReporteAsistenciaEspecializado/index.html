@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <img onclick="window.location.href='../../../index.html'" class="logo_header"
+                src="../../../assets/img/blancobesafe.png" alt="">
+            <a class="alt_letra derecha" href="../../sesiones_perfiles/perfilUsuarioEspecializado/index.html">PERFIL <i
+                    class="far fa-user-circle"></i></a>
+           
+            <a class="alt_letra titulo_cuenta " href="../../sesiones_perfiles/sesionUsuarioEspecializado/index.html">—USUARIO ESPECIALIZADO</a>
+
+
+        </nav>
+
+    </header>
+    <main>
+
+        <!-- =======================================
+                CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+            =================================================-->
+
+            <div class=" contenido_izquierdo izquierda">
+
+                <br>
+    
+                <ul style="list-style-type:none;" class="alt_letra listas_menu">
+    
+                    <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+    
+                    <li><a href="../../listar/listarSolicitudesAsistencia/index.html"> Solicitudes asistencia</a> </li>
+                    <br>
+                    <li><a href="../../listar/listarReporteAsistenciaEspecializado/index.html">Solicitudes Aceptadas</a> </li>
+                    <br>
+                    <li><a href="../../listar/listarVehiculosUEsp/index.html"> Vehiculos</a> </li>
+                    <br>
+    
+    
+    
+    
+                </ul>
+    
+            </div>
+        
+
+        <!-- =======================================
+                CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+            =================================================-->
+
+        <!-- =======================================
+                                    Contenido Central Inicio
+            =================================================-->
+
+
+        <div class="contenidoPrincipal">
+
+            <section class="listadoUsuarios">
+                <br>
+                <input type="text" id="inputBuscar" name="search" class="izquierda" onkeyup="buscar()"
+                    placeholder="Buscar">
+
+
+              <!--   <button class="boton_2 alt_letra fondosG modificarBoton  " type="button">
+                    <a class="redireccion" href="../../registros/registroTipoAsistencia/index.html">Agregar
+                        nueva asistencia</a>
+                </button> -->
+                <br> <br> <br>
+
+
+                <h1>Solicitudes aceptadas</h1> <br>
+
+                <table id="tablaUsuarios" class="tablaUsuarios tablaListar">
+
+                    <thead>
+                        <tr>
+                            <th id="">Tipo de incidente</th>
+                            <th id="">Tipo de asistencia</th>
+                            <th id="">Descripción</th>
+                            <th id="">Ubicacion</th>
+                            <th id="">Imagen</th>
+                            <th id="">Usuario solicitante</th>
+                            <th id="">Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="contenidoTablaVehiculo">
+
+                    </tbody>
+
+
+                </table>
+
+                <br>
+
+            </section>
+
+        </div>
+
+
+        <!-- =======================================
+                                    Contenido Central Final
+            =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

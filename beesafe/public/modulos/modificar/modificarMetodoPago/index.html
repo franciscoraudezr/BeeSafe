@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img class="logo_header" src="../../../assets/img/blancobesafe.png" alt="">
+            <a class="alt_letra derecha" href="../../../index.html" onclick="localStorage.clear()">CERRAR SESIÓN</a>
+            <a class="alt_letra derecha " href="../../sesiones_perfiles/sesionUsuarioClasico/index.html">INICIO</a>
+            <a class="alt_letra titulo_cuenta " href="../../sesiones_perfiles/perfilUsuarioClasico/index.html">—USUARIO
+                TRADICIONAL</a>
+
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+    <div class=" contenido_izquierdo izquierda">
+
+        <br>
+
+        <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+            <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+            <li><a href="../../sesiones_perfiles/sesionUsuarioClasico/index.html">Mapa</a> </li>
+            <br>
+
+            <li><a href="../../registros/registroSiniestroAsistencia/index.html">Reporte de incidente</a> </li>
+            <br>
+            <li><a href="../../listar/listarReporteAsistenciaClasico/index.html">Asistencias Solicitadas</a> </li>
+
+            <br>
+            <li><a href="../../listar/listarVehiculos/index.html">Vehículos</a> </li>
+
+            <br>
+            <li><a href="../../listar/listarMetodoPago/index.html">Métodos de pago</a> </li>
+            <br>
+
+            <br>
+        </ul>
+
+    </div>
+    
+        <!-- =======================================
+        CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+    =================================================-->
+
+        <!-- =======================================
+                            Contenido Central Inicio
+    =================================================-->
+
+
+        <div class="contenidoPrincipal">
+
+
+
+            <section class="formulario">
+
+                <form>
+
+                    <br>
+                    <br> <br>
+
+                    <h1 class="alt_letra">Modificar tarjeta de pago</h1> <br>
+
+
+                    <input class="fondosG" type="text" value="" placeholder="Nombre del titular" name="nombre"
+                        id="nombre">
+                    <input class="fondosG" type="text" value="" placeholder="Número de tarjeta" name="numeroTarjeta"
+                        id="numeroTarjeta"> <br> <br>
+                    <input class="fondosG" type="month" value="" placeholder="" name="fecha" id="fecha">
+                    <input class="fondosG" type="number" value="" placeholder="CVV" name="cvv" id="cvv">
+                    <br>
+                    <br>
+
+
+
+
+                    <button class="boton_1 alt_letra fondosG " type="button" onclick="modificar()"> Guardar cambios</button>
+
+
+                </form>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- =======================================
+                            Contenido Central Final
+    =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

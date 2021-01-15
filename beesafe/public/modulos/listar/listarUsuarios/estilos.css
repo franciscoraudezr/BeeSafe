@@ -1,0 +1,21 @@
+main .contenidoPrincipal{
+  max-height: 85vh;
+  overflow: auto;
+}
+
+.contenidoPrincipal {
+  margin-left: 22%;
+  
+}
+.modificarBoton{
+  width: 19%;
+}
+
+#inputBuscar{
+  width: 50.5%;
+}
+
+.fondosG{
+  padding: 18px ;
+ 
+}

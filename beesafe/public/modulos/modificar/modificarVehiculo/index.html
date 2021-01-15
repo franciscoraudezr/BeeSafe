@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="../../../assets/css/estilosGlobales.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/2b7b514291.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <img class="logo_header" src="../../../assets/img/blancobesafe.png" alt="">
+          
+            <a class="alt_letra derecha " href="../../sesiones_perfiles/perfilUsuarioClasico/index.html">PERFIL <i
+                class="far fa-user-circle"></i></a>
+            <a class="alt_letra titulo_cuenta " href="../../sesiones_perfiles/sesionUsuarioClasico/index.html">—USUARIO
+                TRADICIONAL</a>
+
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+        <div class=" contenido_izquierdo izquierda">
+
+            <br>
+
+            <ul style="list-style-type:none;" class="alt_letra listas_menu">
+
+                <h3 class="titulo_lateral alt_letra">Opciones</h3> <br>
+                <li><a href="../../sesiones_perfiles/sesionUsuarioClasico/index.html">Mapa</a> </li>
+                <br>
+
+                <li><a href="../../registros/registroSiniestroAsistencia/index.html">Reporte de incidente</a> </li>
+                <br>
+                <li><a href="../../listar/listarReporteAsistenciaClasico/index.html">Asistencias Solicitadas</a> </li>
+
+                <br>
+                <li><a href="../../listar/listarVehiculos/index.html">Vehículos</a> </li>
+
+                <br>
+                <li><a href="../../listar/listarMetodoPago/index.html">Métodos de pago</a> </li>
+                <br>
+
+                <br>
+            </ul>
+
+        </div>
+        
+
+        <!-- =======================================
+            CONTENIDO EN EL CAMPO IZQUIERDO DE LA PAGINA INICIO
+        =================================================-->
+
+        <!-- =======================================
+                                Contenido Central Inicio
+        =================================================-->
+
+
+      <!--   <div class="contenidoPrincipal">
+
+
+
+            <section class="formulario">
+
+                <form>
+
+                    <br>
+
+                    <br> <br>
+
+
+
+                    <h1 class="alt_letra">modificar vehículo</h1> <br>
+
+                    <select class="fondosG" value="" name="marca_vehiculo" id="marca_vehiculo">
+                        <option value="" selected hidden>Marca de vehículo:</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW </option>
+                        <option value="Chevrolet">Chevrolet </option>
+                        <option value="Citroen">Citroen </option>
+                        <option value="Ford">Ford </option>
+                        <option value="Honda">Honda </option>
+                        <option value="Hyundai">Hyundai </option>
+                        <option value="Jeep">Jeep </option>
+                        <option value="Mitsubishi">Mitsubishi </option>
+                        <option value="Nissan">Nissan </option>
+                        <option value="Susuki">Susuki </option>
+                        <option value="Tesla">Tesla </option>
+                        <option value="Toyota">Toyota </option>
+                    </select>
+
+                    <input class="fondosG" type="text" value="" placeholder="Modelo de vehículo" name="modelo"
+                        id="modelo"> <br>
+                    <br>
+
+
+                    <input class="fondosG" type="number" value="" placeholder="Año" name="anno" id="anno">
+                    <input class="fondosG" type="text" value="" placeholder="Placa" name="placaVehi" id="placaVehi"> <br> <br>
+                    <input class="fondosG" type="text" value="" placeholder="Conductor" name="chofer" id="chofer">
+
+
+
+                    <br> <br>
+                    <input class="boton_1 alt_letra fondosG" type="button" value="Guardar cambios"
+                        onclick="modificar()">
+
+
+
+                </form>
+
+            </section>
+
+
+        </div> -->
+
+        <div class="contenidoPrincipal">
+
+            <section class="listadoUsuarios">
+
+                <br><br>
+                <button class="boton_2 alt_letra fondosG modificarBoton derecha " type="button">
+                    <a class="redireccion" onclick="modificar()">Guardar cambios</a>
+                </button>
+             
+
+                <h1 class="izquierda alt_letra">Datos de su cuenta</h1>
+
+
+                <br><br>
+
+                <div id="contenidoUsuario">
+
+                </div>
+
+                <br>
+            
+
+            </section>
+
+        </div>
+
+
+
+        <!-- =======================================
+                                Contenido Central Final
+        =================================================-->
+
+    </main>
+
+
+
+    <footer>
+
+        <p class="derecha">WORKAPES&copy;<span>Todos los derechos reservados </span></p>
+
+    </footer>
+  
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

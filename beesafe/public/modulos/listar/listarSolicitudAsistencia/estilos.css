@@ -1,0 +1,99 @@
+/** ==================================
+    se llamaron estilos globlaes de otra
+    carpeta, ingrese los suyos aca,
+    para sobreescribir algo si no se cambia
+    puede agregarle a la derecha
+    !important 
+    y listo
+    =================================**/
+    .absoluto{
+      position: absolute!important;
+    }
+    main .contenidoPrincipal{
+      max-height: 95vh;
+      overflow: auto!important;
+    }
+    
+    .contenidoPrincipal {
+      margin-left: 22%;
+      
+    }
+    
+    .modificarBoton{
+      width: 20.5%;
+      margin-left: 11.5%;
+    }
+    
+    .imagen{
+      width: 35px;
+    }
+
+  
+    .estiloBoton:hover {
+      border: #cc5d01 3px solid;
+    }
+    .imagen_provisional{
+      font-size: 150px;
+      margin-left: 50px;
+    }
+    
+  
+ 
+    
+
+
+    .boton-imagen {
+      font-family: "Baloo", cursive;
+      text-align: justify;
+      border: #2f2319 3px solid;
+      background-color:inherit;
+      color: #2f2319;
+      padding: 15px 15px;
+    }
+    .boton-imagen:hover {
+      border: #ef9d34 5px solid;
+      
+    }
+
+    .estiloBoton {
+      font-family: "Baloo", cursive;
+      text-align: justify;
+      border: #ef9d34 3px solid;
+      background-color: transparent;
+      color: #2f2319;
+      padding: 15px 15px;
+      width: 250px;
+      margin-right: 13px;
+      border-radius: 5px;
+      
+    }
+    .estiloBoton:hover {
+      border: #cc5d01 3px solid;
+    }
+
+    .imagenAgregada{
+      width: 25%;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: -500px;
+
+    }
+    
+ .subirPoco{
+   margin-left: 3.2%!important;
+   
+ }
+ .mapita{
+   margin-right: 1%!important;
+   
+ }
+ .tituloFoto{
+   margin-left: 3.5%;
+ }
+
+.icon {
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
