@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "proyecto de ingeniera de software cenfotec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "workapes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {}
+}
