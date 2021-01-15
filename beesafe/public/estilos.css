@@ -1,0 +1,32 @@
+
+      
+      /** ==================================
+          Main - Formulario - Registro
+          =================================**/
+      
+      .logoFormu {
+        width: 30%;
+        margin-bottom: -50px;
+        margin-top: 25px;
+      }
+      .formulario {
+        text-align: center;
+      
+        background: url(assets/img/fondoabeja.png);
+        background-size: cover;
+      
+        height: 100vh;
+      }
+
+      
+      /** ==================================
+          Inicio de Sesion - Formulario
+          =================================**/
+      .largoFondos {
+        width: 35%!important;
+      }
+
+      .espacio{
+        margin: 20px!important;
+      }
+      

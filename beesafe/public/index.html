@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeSafe</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="assets/css/estilosGlobales.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+2&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <section class="formulario">
+
+
+        <form action="" method="get">
+            <br><br><br><br>
+
+            <img class="logoFormu" src="assets/img/BEESAFE.png" alt=""> <br> <br>
+            <h1 class="alt_letra">Inicio de Sesión</h1> <br>
+
+            <input class="fondosG largoFondos" type="email" value="" placeholder="Correo electrónico" name="correo"
+                id="correo"> <br> <br>
+            <input class="fondosG largoFondos" type="password" value="" placeholder="Contraseña" name="password"
+                id="password"> <br> <br>
+
+            <br> <br>
+
+            <input class="boton_1 espacio fondosG alt_letra " type="button" value="Ingresar"
+            onclick="validarLogin()"> 
+            <input class="boton_1 espacio fondosG alt_letra" type="button" value="Crear Cuenta"
+                onclick="window.location.href='modulos/registros/registroUsuarioClasico/index.html'">
+
+
+
+        </form>
+
+    </section>
+
+
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

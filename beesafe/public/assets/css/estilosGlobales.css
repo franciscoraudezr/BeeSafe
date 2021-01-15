@@ -1,0 +1,343 @@
+/** ==================================
+    GLOBALES
+    =================================**/
+.desactivado{
+  background-color: #2f2319;
+  color: #ffffff;
+  border-radius: 50%!important;
+}
+.desactivado:hover{
+  background-color: #2f2319!important;
+  color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Baloo 2", cursive;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+header {
+  max-height: 10vh;
+  overflow: hidden;
+}
+main {
+  max-height: 85vh;
+  overflow: hidden;
+}
+footer {
+  max-height: 5vh;
+  overflow: hidden;
+}
+.alt_letra {
+  font-family: "Baloo", cursive;
+  letter-spacing: 2px;
+}
+.derecha {
+  float: right;
+}
+.izquierda {
+  float: left;
+}
+
+h1 {
+  color: #2f2319;
+  text-transform: uppercase;
+  letter-spacing: 8px !important;
+}
+/** ==================================
+                    CABECERA
+            =================================**/
+
+nav {
+  background-color: #2f2319;
+  height: 500px;
+}
+
+.logo_header {
+  width: 15%;
+  padding-left: 20px;
+  float: left;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.titulo_cuenta {
+  float: left;
+  font-size: larger;
+  margin-top: 3px;
+}
+
+main .contenidoPrincipal {
+  max-height: 85vh;
+  overflow: auto;
+}
+
+/** ==================================
+                    CONTENIDO PRINCIPAL
+            =================================**/
+
+.contenido_izquierdo {
+  background: url(../img/fondoabeja.png);
+  background-position: center;
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+  border-right: #2f2319 1px solid;
+}
+
+.titulo_lateral {
+  color: #2f2319;
+  width: 90%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-shadow: 3px 3px 7px #a8998c;
+}
+.fondosG {
+  background-color: rgba(83, 61, 39, 0.603);
+  border: none;
+  padding: 20px;
+  color: #ef9d34;
+  margin: 0px 15px;
+  width: 250px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+.fondosG::placeholder {
+  color: white;
+  font-family: "Baloo 2", cursive;
+}
+
+.largoFondos {
+  width: 35% !important;
+}
+
+select option {
+  margin: 40px;
+  background: #2f2319;
+  color: #fff;
+  font-family: "Baloo 2", cursive;
+}
+
+/* Para la funcion de cambiar imagen*/
+.muestraIcono {
+  padding: 20px;
+  margin: -40px 15px;
+  font-size: 100px;
+  color: black;
+}
+.muestraIcono:hover {
+  color: #cc5d01;
+}
+.imagenAgregada {
+  width: 4%;
+  margin-top: 7px;
+}
+
+.boton_1 {
+  color: white;
+  background-color: #2f2319;
+  width: 20%;
+  font-size: 15px;
+  margin: auto;
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+}
+.boton_1:hover {
+  box-shadow: 1px 1px 7px #2f2319;
+  background-color: #cc5d01;
+}
+.boton_2 {
+  color: white;
+  background-color: #cc5d01;
+  width: 20%;
+  font-size: 15px;
+  margin-left: 2;
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+}
+.boton_2:hover {
+  box-shadow: 1px 1px 7px #2f2319;
+  background-color: #ef9d34;
+}
+
+.boton_3 {
+  color: white;
+  background-color: #2f2319;
+  width: 89%;
+  font-size: 15px;
+  margin-left: 2;
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+}
+.boton_3:hover {
+  box-shadow: 1px 1px 7px #2f2319;
+  background-color: #cc5d01;
+}
+
+
+.listas_menu {
+  width: 95%;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 3px 5px;
+}
+.listas_menu li {
+  color: white;
+  background-color: #2f2319;
+
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 8px 5px;
+}
+.listas_menu li:hover {
+  background-color: #cc5d01;
+}
+.listas_menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton_admin {
+  color: white;
+  background-color: #2f2319;
+  width: 250px;
+  font-size: 15px;
+  margin: 0 auto;
+  border: #2f2319;
+  box-shadow: 1px 1px 10px #2f2319;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.boton_admin:hover {
+  box-shadow: 1px 1px 7px #2f2319;
+  background-color: #cc5d01;
+}
+
+.redireccion {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+table {
+  overflow: hidden;
+  color: #666666;
+  border-radius: 5px;
+}
+
+.tablaListar {
+  max-width: 92%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 17px;
+
+}
+.tablaListar th {
+  
+  padding: 20px;
+  font-size: 18px;
+  background-color: #cc5d01;
+  color: white;
+  text-transform: uppercase;
+}
+.tablaListar th {
+  
+  width: 10%;
+}
+.tablaListar th:nth-last-child(2) {
+  width: 5%;
+}
+.tablaListar th:nth-last-child(1) {
+  width: 5%;
+}
+.tablaListar td {
+ 
+  text-align: center;
+  padding: 10px;
+}
+.tablaListar img:hover{
+width: 25%;
+}
+
+.tablaListar tr:hover {
+  background-color: #a8998c21;
+}
+.iconoEditarBorrar {       
+  color: #d76d04;
+  font-size: 50px;
+  margin: 0px 50px;
+  }
+
+  .iconoEditarBorrar img {       
+    width: 20%;
+    }
+
+
+.fotoperfil{
+  width: 35%;
+  border-radius: 10px;
+}
+.fotoperfilespacio{
+  margin-left: 30%;
+}
+
+.mapaConBotones{
+  position: absolute!important;
+  z-index: 100;
+  
+}
+
+/** ==================================
+                    BUSCADOR
+          =================================**/
+
+    #inputBuscar {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      color: #2f2319;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 17px; 
+      background-size: 15px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      background-image: url("../../../assets/img/image-search\ gray.png");
+      font-family: "Baloo 2", cursive;
+      width: 70%;
+    
+      }
+
+
+      .modificarBoton{
+        width: 20.5%;
+      }
+
+
+/* .tablaListar tr:nth-child(even) {
+  background-color: #a8998c21;
+} */
+/** ==================================
+                    FOOTER
+          =================================**/
+footer {
+  background-color: #2f2319;
+  height: 100vh;
+  color: white;
+}
+footer p {
+  padding: 3px 20px;
+}
+
